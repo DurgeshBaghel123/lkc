@@ -12,7 +12,7 @@ function Home_section() {
         <Button data="Get start"/>
       </div>
       <div className='col-md-6 image pt-2'data-aos="zoom-in">
-        <img src='public\image\home_main.webp' className=' '/>
+        <img src='public\image\home_main.webp' className=''/>
         <div className='pop-up' data-aos='fade-left' data-aos-delay="1000">
           <img src='public\image\6451ec7f19901e54999d5d0c_hero-popup-image-2.png' className='w-75'/>
         </div>
