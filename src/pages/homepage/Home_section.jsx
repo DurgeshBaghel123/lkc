@@ -7,7 +7,7 @@ function Home_section() {
     <div className='row home-section pt-5'>
       <div className='col-md-6 pt-5'>
         <AutoType/>
-        <h1>Raise the Bar <br/>on Your <span>e-Learning</span><br/> Experience.</h1>
+        <h1>Raise the Bar <br/>on Your <span>e-Development</span><br/> Experience.</h1>
         <p>E-learning particularly beneficial for adult learners who may have other commitments such as work or family responsibilities.</p>
         <Button data="Get start"/>
       </div>
