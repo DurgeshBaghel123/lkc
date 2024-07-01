@@ -1,0 +1,33 @@
+.blogbox .content{  
+    span{
+        font-size: 12px;
+    }
+    h5{
+        letter-spacing: 1px;
+        margin-bottom: 20px;
+    }
+    h5:hover{
+        color:var(--primary-color);
+    }
+    button{
+        font-size: 12px;
+    }
+    .btn{
+        color: var(--text-color);
+        background-color: var(--primary-color);
+    }
+    .btn:hover{
+        background-color: var(--highlight-color);
+    }
+}
+
+.blogbox{
+    color: var(--text-color);
+    background-color: var(--section-bg);
+    .image img{
+        transition: all 0.5s;
+    }
+    .image img:hover{
+        transform: scale(1.1);
+    }
+}

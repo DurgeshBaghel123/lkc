@@ -10,6 +10,7 @@ import Services from "./pages/servicepage/Services.jsx";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Footer from "./components/footer/Footer.jsx";
+import Singlepage from "./pages/blogsinglepage/Singlepage.jsx";
 
 
 
@@ -22,10 +23,12 @@ function App() {
       easing: "ease-out-cubic",
     });
   }, []);
+  
     
   return (
     <>
       <div className="container-fluid dark  ">
+
         <Router>
           <Navbar/>
           <Routes>
@@ -34,6 +37,7 @@ function App() {
             <Route path="/blog"element={<Blog/>}/>
             <Route path="/contact"element={<Contact/>}/>
             <Route path="/services"element={<Services/>}/>
+            <Route path="/single"element={<Singlepage/>}/>
           </Routes>
           <Footer/>
         </Router>

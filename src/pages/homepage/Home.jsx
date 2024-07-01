@@ -7,8 +7,13 @@ import About_section from "../../components/About_section";
 import Cources_category from "../../components/cources/Cources_category";
 import Testimonials from "../../components/testimonials/Testimonials.jsx"
 import Contact from "../../components/contact/Contact.jsx";
+import { useEffect } from "react";
 
 function Home() {
+  useEffect(() => {
+    // Scroll to the top of the page when the component mounts
+    window.scrollTo(0, 0);
+  }, []);
   return (
     < div className="bodyimg">
       <div className="row home-section py-5 px-2">
@@ -26,10 +31,10 @@ function Home() {
           <Button data="Get start" />
         </div>
         <div className="col-md-6 image pt-2" data-aos="zoom-in">
-          <img src="public\image\home_main.webp" className=" " />
+          <img src="\image\home_main.webp" className=" " />
           <div className="pop-up" data-aos="fade-left" data-aos-delay="1000">
             <img
-              src="public\image\6451ec7f19901e54999d5d0c_hero-popup-image-2.png"
+              src="\image\6451ec7f19901e54999d5d0c_hero-popup-image-2.png"
               className="w-75"
             />
           </div>

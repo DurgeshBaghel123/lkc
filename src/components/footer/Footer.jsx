@@ -6,17 +6,17 @@ import { NavLink } from 'react-router-dom'
 function Footer() {
   return (
     <>
-    <div className="row footer"data-aos="fade-up">
+    <div className="row footer">
         <div className="col-md-3">
             <div className="logo">
                 <img src="public\image\5e808ce7dc544553a7f1b1e4_Black (1).svg" alt=""className='w-100' />
             </div>
             <p>There are many variations of passag of Lor Ipsum available but the major have suffered alteration</p>
             <div className="icon">
-                <i class="fa-brands fa-facebook-f"></i>
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-skype"></i>
+                <i className="fa-brands fa-facebook-f"></i>
+                <i className="fa-brands fa-twitter"></i>
+                <i className="fa-brands fa-instagram"></i>
+                <i className="fa-brands fa-skype"></i>
             </div>
             <Button data="More Webflow Template"/>
         </div>

@@ -35,11 +35,13 @@ const Navbar = () => {
       <div className="pt-2 Navbar px-3">
         <div className="logo">
           {
-            <img
-              src="public\image\5e808ce7dc544553a7f1b1e4_Black (1).svg"
-              alt="logo"
-              className="w-100"
-            />
+            <NavLink to="/">
+              <img
+                src="public\image\5e808ce7dc544553a7f1b1e4_Black (1).svg"
+                alt="logo"
+                className="w-100"
+              />
+            </NavLink>
           }
         </div>
 
@@ -55,7 +57,7 @@ const Navbar = () => {
                 <li className="submenu">
                   <NavLink to="/services">
                     <i className="fa-solid fa-address-card mobile-icon "></i>{" "}
-                    SERVICES <i class="fa-solid fa-chevron-down"></i>
+                    SERVICES <i className="fa-solid fa-chevron-down"></i>
                   </NavLink>
                   <div className="dropdown shadow">
                     <div className="col-md-4 ">

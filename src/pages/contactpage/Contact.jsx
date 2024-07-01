@@ -3,16 +3,21 @@ import "./Contact.scss";
 import SmallButton from "../../components/smallbtn/SmallButton";
 import contactdata from "../../components/contact/Contactdata";
 import Contactbox from "../../components/contact/Contactbox";
+import { useEffect } from "react";
 
 function Contact() {
+  useEffect(() => {
+    // Scroll to the top of the page when the component mounts
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
     <div className="row main-contact my-5" data-aos="fade-down" data-aos-duration="1000">
         <div className="col-md-4">
           <div className="row px-2">
-            {contactdata.map((ele)=>{
+            {contactdata.map((ele ,ind)=>{
               return(
-                <div className="col-md-12 text-center px-5">
+                <div key={ind}className="col-md-12 text-center px-5">
                   <Contactbox data={ele}/>
                 </div>
               )
@@ -27,22 +32,22 @@ function Contact() {
           <form action="https://formspree.io/f/mvgpoppq"  method="POST">
             <div className="row my-2">
               <div className="col-md-6 mb-3">
-              <input type="text" class="form-control  " name="username" placeholder="Your Name" autoCapitalize="off" required/>
+              <input type="text" className="form-control  " name="username" placeholder="Your Name" autoCapitalize="off" required/>
               </div>
               <div className="col-md-6 mb-3">
-              <input type="email" class="form-control" name="email" placeholder="E-mail" autoCapitalize="off" required/>
+              <input type="email" className="form-control" name="email" placeholder="E-mail" autoCapitalize="off" required/>
               </div>
             </div>
             <div className="row my-2">
               <div className="col-md-6 mb-3">
-              <input type="number" class="form-control" name="phone" placeholder="Phone Number" autoCapitalize="off" required/>
+              <input type="number" className="form-control" name="phone" placeholder="Phone Number" autoCapitalize="off" required/>
               </div>
               <div className="col-md-6 mb-3">
-              <input type="text" class="form-control" name="subject" placeholder="Subject" autoCapitalize="off" required/>
+              <input type="text" className="form-control" name="subject" placeholder="Subject" autoCapitalize="off" required/>
               </div>
             </div>
               
-            <textarea name="message" class="form-control" cols="30" rows="6" placeholder="Type Your Message" autoCapitalize="off" required/>
+            <textarea name="message" className="form-control" cols="30" rows="6" placeholder="Type Your Message" autoCapitalize="off" required/>
             <input type="submit" className=" btn btn-primary mt-4 " value="Submit Form"/>
           </form>
         </div>
@@ -53,9 +58,9 @@ function Contact() {
         width="100%"
         height="350"
         style={{border:0}}
-        allowfullscreen=""
+        allowFullScreen=""
         loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
+        referrerPolicy="no-referrer-when-downgrade"
       ></iframe>
     </div>
     </>

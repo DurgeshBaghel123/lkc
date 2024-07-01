@@ -6,9 +6,14 @@ import SmallButton from "../../components/smallbtn/SmallButton";
 import aboutcarddata from "./Aboutcarddata";
 import Cources_box from "../../components/cources/Cources_box";
 import Button from "../../components/button/Button";
+import { useEffect } from "react";
 
 
 function About() {
+  useEffect(() => {
+    // Scroll to the top of the page when the component mounts
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="row about  ">
       <div className=" row success  m-0 p-0  my-5 ">
@@ -34,9 +39,9 @@ function About() {
           <video
             controls
             muted
-            poster="public\video\640c19d16276f03f0e6dcb23_image here.jpg"
+            poster="\video\640c19d16276f03f0e6dcb23_image here.jpg"
             height={450}
-            src="public\video\Deewaane Full Video Song 4k 60fps - Selfiee (2023).mp4"
+            src="\video\Deewaane Full Video Song 4k 60fps - Selfiee (2023).mp4"
           ></video>
         </div>
       </div>
@@ -49,7 +54,7 @@ function About() {
       <div className="financial row ">
         
           <div className="col-md-6">
-            <img src="public\image\64532bc4906235d94a28042d_screen-image.png" alt="" className="w-100" />
+            <img src="\image\64532bc4906235d94a28042d_screen-image.png" alt="" className="w-100" />
           </div>
           <div className="col-md-6">
             <SmallButton data="Financial Aid"/>

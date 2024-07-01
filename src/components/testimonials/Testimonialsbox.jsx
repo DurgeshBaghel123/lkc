@@ -13,11 +13,11 @@ function Testimonialsbox() {
         <small>CEO @Xanon</small>
       </div>
       <div className="icon">
-      <i class="fa-solid fa-star fa-fade"></i>
-      <i class="fa-solid fa-star "></i>
-      <i class="fa-solid fa-star fa-fade"></i>
-      <i class="fa-solid fa-star "></i>
-      <i class="fa-solid fa-star fa-fade"></i>
+      <i className="fa-solid fa-star fa-fade"></i>
+      <i className="fa-solid fa-star "></i>
+      <i className="fa-solid fa-star fa-fade"></i>
+      <i className="fa-solid fa-star "></i>
+      <i className="fa-solid fa-star fa-fade"></i>
       </div>
       <div className="text">
         <span>One of the biggest advantages of e-learning platforms is their ability to personalize the learning experience. By using advanced algorithms.</span>
